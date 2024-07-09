@@ -12,9 +12,11 @@
 		<input>
 		Password
 		<input>
-		<button>Sign up</button>
+		<div class="center">
+			<button>Sign up</button>
+		</div>
 		<div class="account-in-meetup">
-			Already have an account? <a href="/signup">Log in</a>
+			Already have an account? <a href="/login">Log in</a>
 		</div>
 	</div>
 </div>
