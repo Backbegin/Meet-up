@@ -1,0 +1,106 @@
+<script>
+	import { page } from '$app/stores';
+</script>
+
+<header>
+	<div class="corner">
+		<a href="/">Meet Up</a>
+	</div>
+
+	<nav>
+		<ul>
+			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
+				<a href="/about">About site</a>
+			</li>
+			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
+				<a href="/sverdle">Events</a>
+			</li>
+			<li>
+				<a href="/sverdle">
+					<button>Log in</button>
+				</a>
+			</li>
+			<li>
+				<a href="/sverdle">
+					<button>Sign up</button>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<style>
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.corner {
+		margin: 0.5em 2em;
+		font-size: 1.5em;
+		color: #29B139;
+		width: 6em;
+		height: 3em;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+	}
+
+	ul {
+		position: relative;
+		font-size: large;
+		padding: 0;
+		margin: 0;
+		height: 3em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		background-size: contain;
+	}
+
+	li {
+		position: relative;
+		height: 100%;
+	}
+
+	li[aria-current='page']::before {
+		--size: 6px;
+		content: '';
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: calc(50% - var(--size));
+		border: var(--size) solid transparent;
+		border-top: var(--size) solid var(--color-theme-1);
+	}
+
+	nav a {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		padding: 0 0.5rem;
+		color: var(--color-text1);
+		font-weight: 700;
+		font-size: 0.8rem;
+		letter-spacing: 0.1em;
+		text-decoration: none;
+		transition: color 0.2s linear;
+	}
+
+	.corner a {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		padding: 0 0.5rem;
+		color: var(--color-theme-1);
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: var(--color-theme-1);
+	}
+</style>
