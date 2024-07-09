@@ -100,3 +100,9 @@ input {
 	width: 100%;
 	min-height: 2em;
 }
+
+.center {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}

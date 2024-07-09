@@ -15,7 +15,9 @@
 			</a>
 		</div>
 		<input>
-		<button>Log in</button>
+		<div class="center">
+			<button>Log in</button>
+		</div>
 		<div class="new-in-meetup">
 			New in Meet Up? <a href="/signup">Create an account</a>
 		</div>
