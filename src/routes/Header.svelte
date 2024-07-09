@@ -18,12 +18,20 @@
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</li>
-			<li aria-current={($page.url.pathname === '/login' || $page.url.pathname === '/signup') ? 'page' : undefined}>
+			<li
+				aria-current={$page.url.pathname === '/login' || $page.url.pathname === '/signup'
+					? 'page'
+					: undefined}
+			>
 				<a href="/login">
 					<button>Log in</button>
 				</a>
 			</li>
-			<li aria-current={($page.url.pathname === '/login' || $page.url.pathname === '/signup') ? 'page' : undefined}>
+			<li
+				aria-current={$page.url.pathname === '/login' || $page.url.pathname === '/signup'
+					? 'page'
+					: undefined}
+			>
 				<a href="/signup">
 					<button>Sign up</button>
 				</a>
@@ -41,7 +49,7 @@
 	.corner {
 		margin: 0.5em 2em;
 		font-size: 1.5em;
-		color: #29B139;
+		color: #29b139;
 		width: 6em;
 		height: 3em;
 	}

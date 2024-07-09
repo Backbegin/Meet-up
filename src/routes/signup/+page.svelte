@@ -1,17 +1,17 @@
 <svelte:head>
 	<title>Login</title>
-	<meta name="login"/>
+	<meta name="login" />
 </svelte:head>
 
 <div class="text-column">
 	<div class="registration-window">
 		<h1>Create your account</h1>
 		User name
-		<input>
+		<input />
 		Email address
-		<input>
+		<input />
 		Password
-		<input>
+		<input />
 		<div class="center">
 			<button>Sign up</button>
 		</div>

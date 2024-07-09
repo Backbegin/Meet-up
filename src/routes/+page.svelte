@@ -15,7 +15,7 @@
 	<a href="/events">
 		<button>Browse events</button>
 	</a>
-	<img src={introduction} alt="introduction"/>
+	<img src={introduction} alt="introduction" />
 </section>
 
 <style>

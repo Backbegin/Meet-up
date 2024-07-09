@@ -26,7 +26,7 @@
 				<img src={telegram} alt="telegram" />
 			</a>
 		</div>
-	</footer> 
+	</footer>
 </div>
 
 <style>
@@ -53,8 +53,8 @@
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
-		background-color: #FAECF9;
-		color: #B129AA;
+		background-color: #faecf9;
+		color: #b129aa;
 		padding: 0.1em;
 	}
 
