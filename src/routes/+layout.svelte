@@ -16,13 +16,13 @@
 	<footer>
 		<p>Any questions or suggestions? Contact us:</p>
 		<div>
-			<a href="phone">
+			<a href="mailto:">
 				<img src={phone} alt="phone" />
 			</a>
-			<a href="mailto:">
+			<a href="mailto:d.troegubov@innopolis.university">
 				<img src={mail} alt="mail" />
 			</a>
-			<a href="link">
+			<a href="https://t.me/BogGoro">
 				<img src={telegram} alt="telegram" />
 			</a>
 		</div>

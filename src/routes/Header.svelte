@@ -18,12 +18,12 @@
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/login' ? 'page' : undefined}>
+			<li aria-current={($page.url.pathname === '/login' || $page.url.pathname === '/signup') ? 'page' : undefined}>
 				<a href="/login">
 					<button>Log in</button>
 				</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/signup' ? 'page' : undefined}>
+			<li aria-current={($page.url.pathname === '/login' || $page.url.pathname === '/signup') ? 'page' : undefined}>
 				<a href="/signup">
 					<button>Sign up</button>
 				</a>

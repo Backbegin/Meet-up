@@ -10,7 +10,7 @@
 		<input>
 		<div class="password-row">
 			Password
-			<a href="link">
+			<a href="/login">
 				Forgot password?
 			</a>
 		</div>
