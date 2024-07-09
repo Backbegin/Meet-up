@@ -46,7 +46,7 @@ pre {
 	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
 	padding: 0.5em;
 	overflow-x: auto;
-	color: var(--color-text);
+	color: var(--color-text-main);
 }
 
 .text-column {
