@@ -1,0 +1,32 @@
+name: Linting and checking
+
+on:
+  push:
+    branches: 'main'
+
+jobs:
+  build_site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
+      # - name: Install pnpm
+      #   uses: pnpm/action-setup@v3
+      #   with:
+      #     version: 8
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run lint
+        run: npm run lint
+      - name: Run check
+        run: npm run check
