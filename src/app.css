@@ -82,3 +82,21 @@ button {
 	width: 1px;
 	white-space: nowrap;
 }
+
+.registration-window {
+	padding: 3em;
+	display: flex;
+	font-weight: 400;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 2px solid #29B139;
+	background-color: #FFFAFE;
+	min-height: 25em;
+}
+
+input {
+	border-radius: 0.5em;
+	background-color: #F8F8F8;
+	width: 100%;
+	min-height: 2em;
+}

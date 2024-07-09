@@ -12,7 +12,7 @@
 		Let's find companions <br />
 		to spend our leisure time together
 	</h1>
-	<a href="/sverdle">
+	<a href="/events">
 		<button>Browse events</button>
 	</a>
 	<img src={introduction} alt="introduction"/>
@@ -33,11 +33,5 @@
 		margin-bottom: 3em;
 		max-width: 700px;
 		max-width: 100%;
-	}
-
-	h1 {
-		width: 100%;
-		text-shadow: aqua;
-		text-shadow: 1em;
 	}
 </style>
