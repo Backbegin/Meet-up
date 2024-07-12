@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Header from './Header.svelte';
 	import phone from '$lib/images/phone.png';
 	import mail from '$lib/images/mail.png';

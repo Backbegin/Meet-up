@@ -1,16 +1,13 @@
-<script>
-	let events = [
-		{ id: 1, name: 'first event', place: 'Innopolis University', day: '12.07.2024', time: '13:50' },
-		{
-			id: 2,
-			name: 'second event',
-			place: 'Innopolis University',
-			day: '12.07.2024',
-			time: '13:50'
-		},
-		{ id: 3, name: 'third event', place: 'Innopolis University', day: '12.07.2024', time: '13:50' },
-		{ id: 4, name: 'fourth event', place: 'Innopolis University', day: '12.07.2024', time: '13:50' }
-	];
+<script lang="ts">
+	import type { Event } from '$lib/types/event';
+
+	interface MyDataType {
+		events: Event[];
+	}
+
+	export let data: MyDataType;
+
+	$: ({ events } = data);
 </script>
 
 <svelte:head>
@@ -19,7 +16,7 @@
 </svelte:head>
 
 <div class="text-column">
-	<h1>Here is all of the events</h1>
+	<h1>Here are all the events</h1>
 	<a href="/events/new">
 		<button>New event</button>
 	</a>
@@ -27,7 +24,7 @@
 		{#each events as event}
 			<div>
 				<a href="/events/{event.id}">
-					{event.name} - {event.place} - {event.day} - {event.time}
+					{event.title} - {event.place} - {event.date} - {event.time}
 				</a>
 			</div>
 		{/each}
