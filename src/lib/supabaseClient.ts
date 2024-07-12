@@ -1,4 +1,4 @@
 import { createClient } from '@supabase/supabase-js';
-import { PRIVATE_SUPABASE_URL, PRIVATE_SUPABASE_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
-export const supabase = createClient(PRIVATE_SUPABASE_URL!, PRIVATE_SUPABASE_KEY!);
+export const supabase = createClient(env.PRIVATE_SUPABASE_URL!, env.PRIVATE_SUPABASE_KEY!);
