@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import type { Event } from '$lib/types/event';
 
 	interface MyDataType {
@@ -11,7 +10,6 @@
 
 	$: ({ event } = data);
 	$: ({ error } = data);
-	let id = $page.params.id;
 </script>
 
 {#if error !== null}
