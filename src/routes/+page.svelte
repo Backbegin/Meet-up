@@ -4,7 +4,8 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" />
+	<meta name="title" content="Home" />
+	<meta name="description" content="Home page" />
 </svelte:head>
 
 <section>

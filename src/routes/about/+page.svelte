@@ -10,7 +10,6 @@
 		own activities, and connect with others in your community.
 	</p>
 	<p>Here's what you can expect:</p>
-	<p></p>
 	<ul>
 		<li>
 			Home: Our central hub provides a clear and concise overview of what's happening. You might
@@ -56,3 +55,15 @@
 		in your community!
 	</p>
 </div>
+
+<style>
+	p {
+		font-size: 1.5em;
+	}
+	ul {
+		font-size: 1.5em;
+	}
+	ul li {
+		margin-bottom: 0.5em;
+	}
+</style>

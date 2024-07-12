@@ -6,6 +6,10 @@
 	import '../app.css';
 </script>
 
+<svelte:head>
+	<meta name="author" content="BackBegin" />
+</svelte:head>
+
 <div class="app">
 	<Header />
 
