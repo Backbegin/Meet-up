@@ -45,4 +45,8 @@
     img {
         width: 30%;
     }
+
+    p {
+        font-size: 3.2vh;
+    }
 </style>
