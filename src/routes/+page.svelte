@@ -30,9 +30,22 @@
 	}
 
 	img {
-		margin-top: 3em;
-		margin-bottom: 3em;
-		max-width: 700px;
+		margin-top: 8vh;
 		max-width: 100%;
+		margin-bottom: 15vh;
+	}
+
+	h1 {
+		font-size: 6.3vh;
+		margin-top: 8vh;
+	}
+
+	button {
+		margin-top: 8vh;
+		margin-bottom: 8vh;
+	}
+
+	button:hover {
+		background-color: #5AD869;
 	}
 </style>
