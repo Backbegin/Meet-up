@@ -37,4 +37,8 @@
 			padding: 12px 0;
 		}
 	}
+
+    div {
+        min-width: 212px;
+    }
 </style>
