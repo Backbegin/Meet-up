@@ -47,17 +47,17 @@
 	}
 
 	.corner {
-		margin: 0.5em 2em;
+		margin: 0.5em 3.8%;
 		font-size: 1.5em;
 		color: #29b139;
-		width: 6em;
-		height: 2em;
 	}
 
 	nav {
 		display: flex;
 		justify-content: center;
-		margin: 0.5em;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		margin-right: 0.5em;
 	}
 
 	ul {
@@ -99,12 +99,15 @@
 		display: flex;
 		height: 100%;
 		align-items: center;
-		padding: 0 0.5rem;
 		color: var(--color-theme-1);
 		text-decoration: none;
 	}
 
 	a:hover {
 		color: var(--color-theme-1);
+	}
+
+	button:hover {
+		background-color: #5AD869;
 	}
 </style>
