@@ -12,6 +12,11 @@
 	$: ({ error } = data);
 </script>
 
+<svelte:head>
+	<title>{event.title}</title>
+	<meta name="description" content={event.description} />
+</svelte:head>
+
 {#if error !== null}
 	<h1>{error}</h1>
 {:else}

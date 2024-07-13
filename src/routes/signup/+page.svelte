@@ -4,21 +4,27 @@
 </svelte:head>
 
 <div class="text-column">
-	<div class="registration-window">
+	<form class="registration-window" method="POST">
 		<h1>Create your account</h1>
-		User name
-		<input />
-		Email address
-		<input />
-		Password
-		<input />
+		<label>
+			User name
+			<input name="username" type="username" />
+		</label>
+		<label>
+			Email
+			<input name="email" type="email" />
+		</label>
+		<label>
+			Password
+			<input name="password" type="password" />
+		</label>
 		<div class="center">
 			<button>Sign up</button>
 		</div>
 		<div class="account-in-meetup">
 			Already have an account? <a href="/login">Log in</a>
 		</div>
-	</div>
+	</form>
 </div>
 
 <style>
