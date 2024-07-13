@@ -29,7 +29,7 @@
 		background-color: #faecf9;
 		color: #b129aa;
 		padding: 0.1em;
-        max-height: 2.2em;
+        max-height: 70px;
 	}
 
 	@media (min-width: 480px) {
