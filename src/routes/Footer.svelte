@@ -39,6 +39,10 @@
 	}
 
     div {
-        min-width: 212px;
+        min-width: 167px;
+    }
+
+    img {
+        width: 30%;
     }
 </style>
