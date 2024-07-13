@@ -1,8 +1,8 @@
 @import '@fontsource/fira-mono';
 
 :root {
-	--font-body: 'Inria Serif';
-	--font-mono: 'Fira Mono', monospace;
+	--font-body: "Oswald", sans-serif;
+	--font-mono: "Oswald", sans-serif;
 	--color-theme-1: #29b139;
 	--color-text-main: #4e324d;
 	--color-text1: #b129aa;
