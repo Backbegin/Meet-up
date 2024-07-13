@@ -51,12 +51,13 @@
 		font-size: 1.5em;
 		color: #29b139;
 		width: 6em;
-		height: 3em;
+		height: 2em;
 	}
 
 	nav {
 		display: flex;
 		justify-content: center;
+		margin: 0.5em;
 	}
 
 	ul {
