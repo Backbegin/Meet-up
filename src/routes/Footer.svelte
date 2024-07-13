@@ -47,6 +47,6 @@
     }
 
     p {
-        font-size: 3.1vh;
+        font-size: 3vh;
     }
 </style>
