@@ -46,6 +46,6 @@
 	}
 
 	button:hover {
-		background-color: #5AD869;
+		background-color: #5ad869;
 	}
 </style>

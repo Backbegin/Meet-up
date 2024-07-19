@@ -1,22 +1,22 @@
 <script>
-    import phone from "$lib/images/phone.png";
-    import mail from "$lib/images/mail.png";
-    import telegram from "$lib/images/telegram.png";
+	import mail from '$lib/images/mail.png';
+	import phone from '$lib/images/phone.png';
+	import telegram from '$lib/images/telegram.png';
 </script>
 
 <footer>
-    <p>Any questions or suggestions? Contact us:</p>
-    <div>
-        <a href=" tel:+79279503435">
-            <img src={phone} alt="phone" />
-        </a>
-        <a href="mailto:d.troegubov@innopolis.university">
-            <img src={mail} alt="mail" />
-        </a>
-        <a href="https://t.me/BogGoro">
-            <img src={telegram} alt="telegram" />
-        </a>
-    </div>
+	<p>Any questions or suggestions? Contact us:</p>
+	<div>
+		<a href=" tel:+79279503435">
+			<img src={phone} alt="phone" />
+		</a>
+		<a href="mailto:d.troegubov@innopolis.university">
+			<img src={mail} alt="mail" />
+		</a>
+		<a href="https://t.me/BogGoro">
+			<img src={telegram} alt="telegram" />
+		</a>
+	</div>
 </footer>
 
 <style>
@@ -29,7 +29,7 @@
 		background-color: #faecf9;
 		color: #b129aa;
 		padding: 0.1em;
-        max-height: 70px;
+		max-height: 70px;
 	}
 
 	@media (min-width: 480px) {
@@ -38,15 +38,15 @@
 		}
 	}
 
-    div {
-        min-width: 167px;
-    }
+	div {
+		min-width: 167px;
+	}
 
-    img {
-        width: 30%;
-    }
+	img {
+		width: 30%;
+	}
 
-    p {
-        font-size: 2.9vh;
-    }
+	p {
+		font-size: 2.9vh;
+	}
 </style>
