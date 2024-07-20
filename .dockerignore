@@ -1,0 +1,9 @@
+.git/
+.gitignore
+.github/
+.vscode/
+.env.example
+README.md
+node_modules/
+.svelte-kit/
+build/
