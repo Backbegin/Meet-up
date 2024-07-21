@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Header from './Header.svelte';
-	import Footer from './Footer.svelte';
 	import '../app.css';
+	import Footer from './Footer.svelte';
+	import Header from './Header.svelte';
 </script>
 
 <svelte:head>
@@ -32,5 +32,6 @@
 		width: 100%;
 		margin: 0 auto;
 		box-sizing: border-box;
+		min-height: 100vh;
 	}
 </style>

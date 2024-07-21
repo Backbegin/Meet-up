@@ -7,10 +7,10 @@
 <footer>
 	<p>Any questions or suggestions? Contact us:</p>
 	<div>
-		<a href=" tel:+79279503435">
+		<a href={undefined}>
 			<img src={phone} alt="phone" />
 		</a>
-		<a href="mailto:d.troegubov@innopolis.university">
+		<a href={undefined}>
 			<img src={mail} alt="mail" />
 		</a>
 		<a href="https://t.me/BogGoro">
@@ -27,7 +27,7 @@
 		justify-content: space-around;
 		align-items: center;
 		background-color: #faecf9;
-		color: #b129aa;
+		color: var(--color-text1);
 		padding: 0.1em;
 		max-height: 70px;
 	}

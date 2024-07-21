@@ -10,13 +10,13 @@
 	<nav>
 		<ul>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About site</a>
+				<a href={$page.url.pathname === '/about' ? undefined : '/about'}>About site</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/events') ? 'page' : undefined}>
-				<a href="/events">Events</a>
+				<a href={$page.url.pathname.startsWith('/events') ? undefined : '/events'}>Events</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+				<a href={$page.url.pathname === '/' ? undefined : '/'}>Home</a>
 			</li>
 			<li
 				aria-current={$page.url.pathname === '/login' || $page.url.pathname === '/signup'
@@ -49,7 +49,11 @@
 	.corner {
 		margin: 0.5em 3.8%;
 		font-size: 1.5em;
-		color: #29b139;
+		color: var(--color-theme-1);
+	}
+
+	.corner a:hover {
+		color: var(--color-text1);
 	}
 
 	nav {
@@ -78,10 +82,6 @@
 		height: 100%;
 	}
 
-	li[aria-current='page'] {
-		display: none;
-	}
-
 	nav a {
 		display: flex;
 		height: 100%;
@@ -107,7 +107,15 @@
 		color: var(--color-theme-1);
 	}
 
+	li[aria-current='page'] a {
+		color: color-mix(in srgb, var(--color-text1), var(--color-theme-1));
+	}
+
+	li[aria-current='page'] a:hover {
+		color: color-mix(in srgb, var(--color-text1), var(--color-theme-1));
+	}
+
 	button:hover {
-		background-color: #5ad869;
+		background-color: var(--color-theme-1-lighten);
 	}
 </style>

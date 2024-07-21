@@ -10,26 +10,27 @@
 		own activities, and connect with others in your community.
 	</p>
 
+	<hr />
 	<div class="about-info">
 		<h2>Take Charge of Your Schedule:</h2>
 		<div class="about-app">
-			<div class="about-app-item" style="border: 2px solid #B129AA;">
-				<h2 style="color: #29B139;">Create Events</h2>
+			<div class="about-app-item">
+				<h2>Create Events</h2>
 				<p>
 					Planning your own event? Share it with the community! Our user-friendly interface allows
 					you to easily create event listings, complete with details like date, time, location, and
 					a captivating description.
 				</p>
 			</div>
-			<div class="about-app-item" style="border: 2px solid #29B139;">
-				<h2 style="color: #B129AA;">Manage Your Events</h2>
+			<div class="about-app-item">
+				<h2>Manage Your Events</h2>
 				<p>
 					Keep your events organized and up-to-date. Edit existing events, add photos, or update any
 					information as needed.
 				</p>
 			</div>
-			<div class="about-app-item" style="border: 2px solid #B129AA;">
-				<h2 style="color: #29B139;">Sign Up for Events</h2>
+			<div class="about-app-item">
+				<h2>Sign Up for Events</h2>
 				<p>
 					Found something interesting? With a few clicks, you can register for any event that sparks
 					your curiosity. Stay informed about event updates and connect with other attendees.
@@ -77,11 +78,15 @@
 	}
 	.about-info {
 		background-color: #fffafe;
-		border-bottom: 2px solid #29b139;
-		border-top: 2px solid #29b139;
 		left: 0;
 		right: 0;
 		padding: 3%;
+	}
+	hr {
+		border: 1px solid var(--color-theme-1);
+		left: 0;
+		right: 0;
+		padding: 0%;
 	}
 	h2 {
 		font-size: 4.5vh;
@@ -103,6 +108,22 @@
 		min-width: 200px;
 		max-width: 29%;
 		margin: 5% auto;
+	}
+
+	.about-app-item:nth-child(odd) {
+		border: 2px solid var(--color-text1);
+	}
+
+	.about-app-item:nth-child(odd) h2 {
+		color: var(--color-theme-1);
+	}
+
+	.about-app-item:nth-child(even) {
+		border: 2px solid var(--color-theme-1);
+	}
+
+	.about-app-item:nth-child(even) h2 {
+		color: var(--color-text1);
 	}
 	.about-app-item p {
 		color: #000000;
