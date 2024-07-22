@@ -86,6 +86,7 @@
 		border: 1px solid var(--color-theme-1);
 		left: 0;
 		right: 0;
+		margin: 0;
 		padding: 0%;
 	}
 	h2 {
