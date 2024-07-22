@@ -10,7 +10,7 @@
 </script>
 
 <a href="/events/{data.id}">
-	<div class="event-card">
+	<div class="event-card rotateXY">
 		<div class="event-card-title">
 			<h2>{data.title}</h2>
 		</div>
@@ -43,6 +43,15 @@
 		min-width: 20rem;
 		padding: 0.5rem;
 		overflow-y: hidden;
+		transition-property: transform;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 150ms;
+	}
+
+	.rotateXY:hover {
+		transform-style: preserve-3d;
+		transform-origin: bottom;
+		transform: rotate3d(1, 1, 0, 7deg);
 	}
 	a:nth-child(odd) .event-card {
 		border: 0.125rem solid var(--color-text1);
