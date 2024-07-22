@@ -1,4 +1,4 @@
-import { PUBLIC_API_BASE_URL } from '$env/static/public';
+const PUBLIC_API_BASE_URL: string = 'https://zakyatbot.ru';
 import axios from 'axios';
 import { type Event } from './types/event';
 
