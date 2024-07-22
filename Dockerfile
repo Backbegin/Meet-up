@@ -10,7 +10,7 @@ RUN npm run build
 FROM node:20-alpine
 WORKDIR /app
 COPY --from=builder /app/build ./build
-COPY package.json package-lock.json .env ./
+COPY package.json package-lock.json ./
 RUN npm ci --omit=dev
 
 CMD ["node", "build"]
