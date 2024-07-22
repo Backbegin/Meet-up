@@ -33,6 +33,7 @@
 		margin-top: 8vh;
 		margin-bottom: 15vh;
 		max-width: 64rem;
+		max-width: 100%;
 	}
 
 	h1 {
