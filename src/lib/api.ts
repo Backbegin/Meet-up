@@ -2,6 +2,8 @@ import { PUBLIC_API_BASE_URL } from '$env/static/public';
 import axios from 'axios';
 import { type Event } from './types/event';
 
+const MOCK: boolean = true;
+
 const api = axios.create({
 	baseURL: PUBLIC_API_BASE_URL as unknown as string
 });
@@ -15,6 +17,7 @@ export const saveUser = async (email: string, password: string) => {
 };
 
 export const editUser = async (id: number, email: string, password: string) => {
+	false;
 	const response = await api.post(`/user/edit/${id}`, null, {
 		params: { email, password }
 	});
@@ -65,15 +68,16 @@ export const deleteEvent = async (id: number, userId: number) => {
 };
 
 export const getAllEvents = async (): Promise<Event[]> => {
-	//const response = await api.get('/event/getAll');
-	// return response.data;
+	if (!MOCK) {
+		const response = await api.get('/event/getAll');
+		return response.data;
+	}
 	return [
 		{
 			id: 1,
 			created: 1721599148,
-			edited: 0,
 			title: 'Presentation Afterparty (sleep)',
-			time: 1721646000,
+			time: '1721646000',
 			place: 'bed',
 			brief: 'Eiusmod nostrud in et sit aliqua velit minim anim.',
 			authorId: 1,
@@ -82,9 +86,8 @@ export const getAllEvents = async (): Promise<Event[]> => {
 		{
 			id: 2,
 			created: 1721599148,
-			edited: 0,
 			title: 'Presentation Afterparty (sleep)',
-			time: 1721646000,
+			time: '1721646000',
 			place: 'bed',
 			brief: 'Occaecat est mollit et laborum enim ea elit voluptate veniam fugiat esse.',
 			authorId: 1,
@@ -93,9 +96,8 @@ export const getAllEvents = async (): Promise<Event[]> => {
 		{
 			id: 3,
 			created: 1721599148,
-			edited: 0,
 			title: 'Presentation Afterparty (sleep)',
-			time: 1721646000,
+			time: '1721646000',
 			place:
 				'Aliquip nostrud magna in velit eu excepteur qui quis ea tempor incididunt dolore officia quis.',
 			brief:
@@ -106,9 +108,8 @@ export const getAllEvents = async (): Promise<Event[]> => {
 		{
 			id: 4,
 			created: 1721599148,
-			edited: 0,
 			title: 'Presentation Afterparty (sleep)',
-			time: 1721646000,
+			time: '1721646000',
 			place: 'bed',
 			brief: 'Deserunt minim dolor nisi exercitation aute deserunt.',
 			authorId: 1,
@@ -117,9 +118,8 @@ export const getAllEvents = async (): Promise<Event[]> => {
 		{
 			id: 5,
 			created: 1721599148,
-			edited: 0,
 			title: 'Presentation Afterparty',
-			time: 2721646000,
+			time: '2721646000',
 			place: 'bed',
 			brief:
 				'Officia officia dolore adipisicing commodo esse. Voluptate anim nulla ipsum magna. Dolor ipsum est Lorem non veniam aliquip nostrud aliqua ut commodo fugiat officia eu. Adipisicing et dolore irure sunt irure adipisicing ipsum ut ex duis eu qui.',
@@ -130,7 +130,9 @@ export const getAllEvents = async (): Promise<Event[]> => {
 };
 
 export const getEvent = async (id: number) => {
-	// const response = await api.get(`/event/get/${id}`);
-	// return response.data;
+	if (!MOCK) {
+		const response = await api.get(`/event/get/${id}`);
+		return response.data;
+	}
 	return (await getAllEvents())[id - 1];
 };

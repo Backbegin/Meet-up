@@ -15,7 +15,9 @@
 			<h2>{data.title}</h2>
 		</div>
 		<p class="event-card-time">
-			🕙 {dayjs.unix(data.time).format('llll')} ({dayjs.unix(data.time).fromNow()})
+			🕙 {dayjs.unix(Number.parseInt(data.time)).format('llll')} ({dayjs
+				.unix(Number.parseInt(data.time))
+				.fromNow()})
 		</p>
 		<p class="event-card-place">📍 {data.place}</p>
 		<div class="event-card-brief">

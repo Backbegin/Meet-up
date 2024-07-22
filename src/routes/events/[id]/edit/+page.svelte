@@ -23,7 +23,7 @@
 	let errorMessage = '';
 
 	const fetchEventDetails = async () => {
-		const url = `https://zakyatbot.ru/event/${eventId}`;
+		const url = `https://zakyatbot.ru/event/get/${eventId}`;
 		const response = await fetch(url);
 
 		if (response.ok) {
