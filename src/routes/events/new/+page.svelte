@@ -1,27 +1,25 @@
 <script lang="ts">
-	let name = '';
+	let title = '';
 	let place = '';
-	let date = '';
 	let time = '';
-	let about = '';
+	let date = '';
+	let brief = '';
+	let text = '';
 	let userId = 1;
 	let errorMessage = '';
 
 	const handleSubmit = async (event: SubmitEvent) => {
 		event.preventDefault();
 
-<<<<<<< HEAD
-=======
 		// Validation check
-		if (!name || !place || !date || !time) {
+		if (!title || !place || !date || !brief) {
 			errorMessage = 'Please fill in all required fields.';
 			return;
 		}
 
 		errorMessage = '';
 
->>>>>>> dev
-		const url = `https://zakyatbot.ru/event/save?name=${encodeURIComponent(name)}&place=${encodeURIComponent(place)}&date=${encodeURIComponent(date)}&userId=${userId}`;
+		const url = `https://zakyatbot.ru/event/save?userId=${userId}`;
 
 		const response = await fetch(url, {
 			method: 'POST',
@@ -30,16 +28,18 @@
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({
-				name: name,
+				title: title,
 				place: place,
-				date: date,
-				userId: userId
+				text: text,
+				brief: brief,
+				time: date + ' ' + time
 			})
 		});
 
 		if (response.ok) {
 			const result = await response.json();
 			console.log('Event created:', result);
+			window.history.back();
 		} else {
 			console.error('Error creating Event:', response.statusText);
 		}
@@ -52,13 +52,14 @@
 		{#if errorMessage}
 			<p class="error-message">{errorMessage}</p>
 		{/if}
-		<input type="text" bind:value={name} placeholder="Title" />
+		<input type="text" bind:value={title} placeholder="Title" />
 		<input type="text" bind:value={place} placeholder="Place" />
-		<div class="date-time-container">
+		<div class="date--container">
 			<input type="date" bind:value={date} />
 			<input type="time" bind:value={time} />
 		</div>
-		<textarea bind:value={about} placeholder="About"></textarea>
+		<textarea bind:value={brief} placeholder="Brief info"></textarea>
+		<textarea bind:value={text} placeholder="Full description"></textarea>
 		<div class="button-container">
 			<button type="submit">Create</button>
 			<button type="button" class="secondary-button" on:click={() => window.history.back()}
@@ -128,12 +129,12 @@
 	.secondary-button:hover {
 		background-color: #c82333;
 	}
-	.date-time-container {
+	.date--container {
 		display: flex;
 		gap: 0.5rem;
 		width: 100%;
 	}
-	.date-time-container input {
+	.date--container input {
 		flex: 1;
 		padding: 0.5rem;
 		margin: 0.5rem 0;
