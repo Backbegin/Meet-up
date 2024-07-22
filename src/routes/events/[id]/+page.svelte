@@ -14,7 +14,7 @@
 
 <svelte:head>
 	<title>{event?.title || 'Event not found'}</title>
-	<meta name="description" content={event?.description || 'Event does not exist in the database'} />
+	<meta name="description" content={event?.brief || 'Event does not exist in the database'} />
 </svelte:head>
 
 {#if error !== null}
@@ -24,5 +24,5 @@
 	<a href="/events/{event?.id}/edit">
 		<button> Edit event </button>
 	</a>
-	<div>{event?.title} - {event?.description} - {event?.place} - {event?.date} - {event?.time}</div>
+	<div>{event?.title} - {event?.brief} - {event?.place} - {event?.time} - {event?.time}</div>
 {/if}

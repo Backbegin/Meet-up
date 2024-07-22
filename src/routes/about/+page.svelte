@@ -104,14 +104,16 @@
 	}
 	.about-app-item {
 		background-color: #ffffff;
-		border-radius: 10px;
-		min-width: 200px;
+		border-radius: 1rem;
+		min-width: 20rem;
 		max-width: 29%;
 		margin: 5% auto;
 	}
 
 	.about-app-item:nth-child(odd) {
-		border: 2px solid var(--color-text1);
+		border: 0.125rem solid var(--color-text1);
+		box-shadow: 0.5rem 0.25rem 0.25rem
+			color-mix(in srgb, rgba(0, 0, 0, 0.5) 90%, var(--color-text1) 10%);
 	}
 
 	.about-app-item:nth-child(odd) h2 {
@@ -119,7 +121,9 @@
 	}
 
 	.about-app-item:nth-child(even) {
-		border: 2px solid var(--color-theme-1);
+		border: 0.125rem solid var(--color-theme-1);
+		box-shadow: 0.5rem 0.25rem 0.25rem
+			color-mix(in srgb, rgba(0, 0, 0, 0.5) 90%, var(--color-theme-1) 10%);
 	}
 
 	.about-app-item:nth-child(even) h2 {

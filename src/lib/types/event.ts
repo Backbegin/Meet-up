@@ -1,10 +1,13 @@
+// created, edited, time are Unix timestamps
+
 export interface Event {
 	id: number;
-	created_at: string;
+	created: number;
+	edited: number;
 	title: string;
-	date: string;
-	time: string;
+	time: number;
 	place: string;
-	description: string;
+	brief: string;
 	authorId: number;
+	text: string;
 }

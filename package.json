@@ -36,6 +36,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@supabase/supabase-js": "^2.44.3"
+		"axios": "^1.7.2",
+		"dayjs": "^1.11.12"
 	}
 }

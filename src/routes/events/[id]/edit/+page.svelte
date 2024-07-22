@@ -16,5 +16,5 @@
 	<h1>{error}</h1>
 {:else}
 	<h1>Here will be event editing</h1>
-	<div>{event.title} - {event.description} - {event.place} - {event.date} - {event.time}</div>
+	<div>{event.title} - {event.brief} - {event.place} - {event.date} - {event.time}</div>
 {/if}

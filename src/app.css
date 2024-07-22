@@ -40,7 +40,7 @@ h2 {
 }
 
 pre {
-	font-size: 16px;
+	font-size: 1rem;
 	font-family: var(--font-mono);
 	background-color: rgba(255, 255, 255, 0.45);
 	border-radius: 3px;
@@ -61,7 +61,7 @@ pre {
 
 button {
 	font-size: inherit;
-	font-weight: 1;
+	font-weight: 400;
 	font-family: inherit;
 	border: none;
 	cursor: pointer;
@@ -106,10 +106,4 @@ input {
 	align-items: center;
 	display: flex;
 	justify-content: center;
-}
-
-.event-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 10px;
 }
