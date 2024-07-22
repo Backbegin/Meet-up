@@ -9,7 +9,6 @@
 
 	export let data: MyDataType;
 
-	$: ({ event } = data);
 	$: ({ error } = data);
 
 	let title = '';

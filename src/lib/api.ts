@@ -17,7 +17,6 @@ export const saveUser = async (email: string, password: string) => {
 };
 
 export const editUser = async (id: number, email: string, password: string) => {
-	false;
 	const response = await api.post(`/user/edit/${id}`, null, {
 		params: { email, password }
 	});
