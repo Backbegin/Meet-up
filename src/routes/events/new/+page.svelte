@@ -11,7 +11,7 @@
 	const handleSubmit = async (event: SubmitEvent) => {
 		event.preventDefault();
 
-		const url = `https://zakyatbot.ru/Event/save?name=${encodeURIComponent(name)}&place=${encodeURIComponent(place)}&date=${encodeURIComponent(date)}&userId=${userId}`;
+		const url = `https://zakyatbot.ru/event/save?name=${encodeURIComponent(name)}&place=${encodeURIComponent(place)}&date=${encodeURIComponent(date)}&userId=${userId}`;
 
 		const response = await fetch(url, {
 			method: 'POST',
